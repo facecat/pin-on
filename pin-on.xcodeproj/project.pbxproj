@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9238B9B41C454B860052EDD6 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9238B9B01C454B860052EDD6 /* NotoSans-Italic.ttf */; };
+		9238B9B51C454B860052EDD6 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9238B9B11C454B860052EDD6 /* NotoSans-Regular.ttf */; };
+		9238B9B61C454B860052EDD6 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9238B9B21C454B860052EDD6 /* NotoSans-Bold.ttf */; };
+		9238B9B71C454B860052EDD6 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9238B9B31C454B860052EDD6 /* NotoSans-BoldItalic.ttf */; };
 		9238EACC1C453592004B223F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238EACB1C453592004B223F /* AppDelegate.swift */; };
 		9238EACE1C453592004B223F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238EACD1C453592004B223F /* ViewController.swift */; };
 		9238EAD11C453592004B223F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9238EACF1C453592004B223F /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9238B9B01C454B860052EDD6 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		9238B9B11C454B860052EDD6 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		9238B9B21C454B860052EDD6 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		9238B9B31C454B860052EDD6 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		9238EAC81C453592004B223F /* pin-on.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pin-on.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9238EACB1C453592004B223F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9238EACD1C453592004B223F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,14 +62,66 @@
 		9238EACA1C453592004B223F /* pin-on */ = {
 			isa = PBXGroup;
 			children = (
-				9238EACB1C453592004B223F /* AppDelegate.swift */,
-				9238EACD1C453592004B223F /* ViewController.swift */,
-				9238EACF1C453592004B223F /* Main.storyboard */,
-				9238EAD21C453592004B223F /* Assets.xcassets */,
-				9238EAD41C453592004B223F /* LaunchScreen.storyboard */,
-				9238EAD71C453592004B223F /* Info.plist */,
+				9238EAE01C453AF8004B223F /* Model */,
+				9238EADE1C453AC5004B223F /* Vew */,
+				9238EAE11C453B05004B223F /* Controller */,
+				9238EAE31C453B25004B223F /* Util */,
+				9238EAE21C453B16004B223F /* Resources */,
+				9238EADD1C453A8C004B223F /* SupportFiles */,
 			);
 			path = "pin-on";
+			sourceTree = "<group>";
+		};
+		9238EADD1C453A8C004B223F /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9238EACB1C453592004B223F /* AppDelegate.swift */,
+				9238EAD21C453592004B223F /* Assets.xcassets */,
+				9238EAD71C453592004B223F /* Info.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		9238EADE1C453AC5004B223F /* Vew */ = {
+			isa = PBXGroup;
+			children = (
+				9238EACF1C453592004B223F /* Main.storyboard */,
+				9238EAD41C453592004B223F /* LaunchScreen.storyboard */,
+			);
+			name = Vew;
+			sourceTree = "<group>";
+		};
+		9238EAE01C453AF8004B223F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9238EAE11C453B05004B223F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9238EACD1C453592004B223F /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9238EAE21C453B16004B223F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9238B9B01C454B860052EDD6 /* NotoSans-Italic.ttf */,
+				9238B9B11C454B860052EDD6 /* NotoSans-Regular.ttf */,
+				9238B9B21C454B860052EDD6 /* NotoSans-Bold.ttf */,
+				9238B9B31C454B860052EDD6 /* NotoSans-BoldItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9238EAE31C453B25004B223F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +183,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9238B9B61C454B860052EDD6 /* NotoSans-Bold.ttf in Resources */,
 				9238EAD61C453592004B223F /* LaunchScreen.storyboard in Resources */,
 				9238EAD31C453592004B223F /* Assets.xcassets in Resources */,
+				9238B9B71C454B860052EDD6 /* NotoSans-BoldItalic.ttf in Resources */,
+				9238B9B51C454B860052EDD6 /* NotoSans-Regular.ttf in Resources */,
 				9238EAD11C453592004B223F /* Main.storyboard in Resources */,
+				9238B9B41C454B860052EDD6 /* NotoSans-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +349,7 @@
 				9238EADC1C453592004B223F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
