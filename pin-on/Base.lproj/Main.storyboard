@@ -108,7 +108,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Pk-7J-OOk" customClass="MaterialView" customModule="pin_on" customModuleProvider="target">
-                                <rect key="frame" x="20" y="196" width="560" height="396"/>
+                                <rect key="frame" x="20" y="196" width="560" height="384"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email LogIn / SignUp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXI-2c-eKN">
                                         <rect key="frame" x="20" y="20" width="212" height="27"/>
@@ -165,6 +165,9 @@
                                         <state key="normal" title="Login / Signup">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="attemptLogin:" destination="KPa-xM-RIv" eventType="touchUpInside" id="dgx-hj-5lQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -201,11 +204,16 @@
                             <constraint firstItem="3Pk-7J-OOk" firstAttribute="leading" secondItem="Dk1-mD-doY" secondAttribute="leadingMargin" id="OEP-MV-j2A"/>
                             <constraint firstItem="3Pk-7J-OOk" firstAttribute="top" secondItem="uQW-KM-1pE" secondAttribute="bottom" constant="20" id="RWL-Fn-48m"/>
                             <constraint firstItem="xp8-hW-s2B" firstAttribute="leading" secondItem="Dk1-mD-doY" secondAttribute="leading" id="V1C-Xe-Hg1"/>
-                            <constraint firstItem="RYF-KC-Tnl" firstAttribute="top" secondItem="3Pk-7J-OOk" secondAttribute="bottom" constant="8" id="ey7-Mz-viS"/>
+                            <constraint firstItem="RYF-KC-Tnl" firstAttribute="top" secondItem="3Pk-7J-OOk" secondAttribute="bottom" constant="20" id="ey7-Mz-viS"/>
                             <constraint firstItem="uQW-KM-1pE" firstAttribute="top" secondItem="Rmj-bF-5bs" secondAttribute="bottom" constant="38" id="q3s-0k-BoI"/>
                             <constraint firstItem="uQW-KM-1pE" firstAttribute="leading" secondItem="Dk1-mD-doY" secondAttribute="leadingMargin" id="qHT-Fi-mFy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="tc0-Kb-47e" id="l9c-ti-Pzc"/>
+                        <outlet property="passwordTextField" destination="VJP-J1-Jj4" id="WAW-Ng-JD9"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="login" id="3TR-Ne-5TT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J77-fN-alx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
