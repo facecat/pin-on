@@ -250,17 +250,17 @@
                                 <rect key="frame" x="20" y="78" width="560" height="502"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="390" id="vf9-Sl-v0T">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="390" id="vf9-Sl-v0T" customClass="PostCell" customModule="pin_on" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="560" height="390"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vf9-Sl-v0T" id="l2g-Yz-F1N">
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="389.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0xL-uy-weU">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0xL-uy-weU">
                                                     <rect key="frame" x="16" y="8" width="528" height="374"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="EnK-n2-EQG">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="EnK-n2-EQG">
                                                             <rect key="frame" x="0.0" y="0.0" width="524" height="50"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="glA-DR-tiV">
@@ -270,31 +270,47 @@
                                                                         <constraint firstAttribute="width" constant="50" id="ntd-sG-SpX"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Facecat1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="y2T-ox-GdA">
-                                                                    <rect key="frame" x="65" y="15" width="357" height="21"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Facecat1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="y2T-ox-GdA">
+                                                                    <rect key="frame" x="56" y="14" width="150" height="24"/>
                                                                     <constraints>
+                                                                        <constraint firstAttribute="width" constant="150" id="5ZH-32-20R"/>
                                                                         <constraint firstAttribute="height" constant="21" id="bHe-wy-x8z"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="17"/>
                                                                     <color key="textColor" red="0.18823529410000001" green="0.2470588235" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
+                                                                    <variation key="default">
+                                                                        <mask key="constraints">
+                                                                            <exclude reference="bHe-wy-x8z"/>
+                                                                        </mask>
+                                                                    </variation>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="30 minutes ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="rzg-Ew-rRs">
-                                                                    <rect key="frame" x="437" y="15" width="88" height="20"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="30 minutes ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="rzg-Ew-rRs">
+                                                                    <rect key="frame" x="212" y="17" width="312" height="17"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="Y4S-0t-Oip"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="12"/>
                                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
+                                                                    <variation key="default">
+                                                                        <mask key="constraints">
+                                                                            <exclude reference="Y4S-0t-Oip"/>
+                                                                        </mask>
+                                                                    </variation>
                                                                 </label>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstAttribute="bottom" secondItem="rzg-Ew-rRs" secondAttribute="bottom" constant="2" id="w5E-hE-69t"/>
+                                                                <constraint firstAttribute="bottom" secondItem="rzg-Ew-rRs" secondAttribute="bottom" id="w5E-hE-69t"/>
                                                             </constraints>
+                                                            <variation key="default">
+                                                                <mask key="constraints">
+                                                                    <exclude reference="w5E-hE-69t"/>
+                                                                </mask>
+                                                            </variation>
                                                         </stackView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test1" translatesAutoresizingMaskIntoConstraints="NO" id="MhY-oN-6fY">
-                                                            <rect key="frame" x="0.0" y="58" width="528" height="278"/>
+                                                            <rect key="frame" x="0.0" y="60" width="528" height="274"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="n1x-PG-VdJ">
                                                             <rect key="frame" x="0.0" y="344" width="227" height="30"/>
@@ -367,6 +383,12 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="0xL-uy-weU" secondAttribute="bottom" id="plu-09-do5"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="y2T-ox-GdA" id="gzv-xF-1mf"/>
+                                            <outlet property="postImg" destination="MhY-oN-6fY" id="Px3-aV-fdu"/>
+                                            <outlet property="postTime" destination="rzg-Ew-rRs" id="hbP-2R-LiK"/>
+                                            <outlet property="userImg" destination="glA-DR-tiV" id="tGX-ni-oF8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

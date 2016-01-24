@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     //MARK: UITableViewDataSource & UITableViewDelegate
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        return tableView.dequeueReusableCellWithIdentifier("PostCell") as! PostCell
     }
 
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {

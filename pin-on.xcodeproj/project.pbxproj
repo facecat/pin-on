@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92339B0C1C553DB3004EB37D /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92339B0B1C553DB3004EB37D /* PostCell.swift */; };
 		9238B9B41C454B860052EDD6 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9238B9B01C454B860052EDD6 /* NotoSans-Italic.ttf */; };
 		9238B9B51C454B860052EDD6 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9238B9B11C454B860052EDD6 /* NotoSans-Regular.ttf */; };
 		9238B9B61C454B860052EDD6 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9238B9B21C454B860052EDD6 /* NotoSans-Bold.ttf */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		57277DC7E8C8F9F05AD307AA /* Pods-pin-on.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pin-on.release.xcconfig"; path = "Pods/Target Support Files/Pods-pin-on/Pods-pin-on.release.xcconfig"; sourceTree = "<group>"; };
 		75767A85CB1A9A05AE1661C6 /* Pods-pin-on.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pin-on.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pin-on/Pods-pin-on.debug.xcconfig"; sourceTree = "<group>"; };
+		92339B0B1C553DB3004EB37D /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		9238B9B01C454B860052EDD6 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
 		9238B9B11C454B860052EDD6 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		9238B9B21C454B860052EDD6 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -83,8 +85,6 @@
 		9238EABF1C453592004B223F = {
 			isa = PBXGroup;
 			children = (
-				9275FAF51C5149EC00E8E36E /* DataService */,
-				92E222141C4BE4BD00A34DB0 /* Util */,
 				9238EACA1C453592004B223F /* pin-on */,
 				9238EAC91C453592004B223F /* Products */,
 				744C08734C58AEB4B796B664 /* Pods */,
@@ -108,6 +108,8 @@
 				9238EAE01C453AF8004B223F /* Model */,
 				9238EADE1C453AC5004B223F /* Vew */,
 				9238EAE11C453B05004B223F /* Controller */,
+				9275FAF51C5149EC00E8E36E /* DataService */,
+				92E222141C4BE4BD00A34DB0 /* Util */,
 				9238EAE21C453B16004B223F /* Resources */,
 				9238EADD1C453A8C004B223F /* SupportFiles */,
 			);
@@ -130,6 +132,7 @@
 				92E222121C4BE41A00A34DB0 /* MaterialView.swift */,
 				92E222171C4BE75800A34DB0 /* MaterialButton.swift */,
 				92E222191C4BEAA400A34DB0 /* MaterialTextField.swift */,
+				92339B0B1C553DB3004EB37D /* PostCell.swift */,
 			);
 			name = Vew;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				9275FAF61C514A0700E8E36E /* DataService.swift */,
 			);
 			name = DataService;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		92E222141C4BE4BD00A34DB0 /* Util */ = {
@@ -176,6 +180,7 @@
 				92E222151C4BE4CE00A34DB0 /* Constance.swift */,
 			);
 			name = Util;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D53529217E0AFE7109BF5F4A /* Frameworks */ = {
@@ -325,6 +330,7 @@
 				92E222161C4BE4CE00A34DB0 /* Constance.swift in Sources */,
 				92E222131C4BE41A00A34DB0 /* MaterialView.swift in Sources */,
 				92E2221A1C4BEAA400A34DB0 /* MaterialTextField.swift in Sources */,
+				92339B0C1C553DB3004EB37D /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
