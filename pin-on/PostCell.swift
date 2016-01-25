@@ -27,4 +27,8 @@ class PostCell: UITableViewCell {
         
     }
 
+//    func configurePostCell(post: poPost) {
+//        nameLbl.text = post.userName
+//        
+//    }
 }

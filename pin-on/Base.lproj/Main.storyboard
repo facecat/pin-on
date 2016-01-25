@@ -83,7 +83,7 @@
                                                 </variation>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUO-OE-Z38" customClass="MaterialButton" customModule="pin_on" customModuleProvider="target">
-                                                <rect key="frame" x="120" y="22" width="400" height="36"/>
+                                                <rect key="frame" x="120" y="24" width="400" height="32"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="17"/>
                                                 <state key="normal" title="FACEBOOK LOGIN">
@@ -271,7 +271,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Facecat1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="y2T-ox-GdA">
-                                                                    <rect key="frame" x="56" y="14" width="150" height="24"/>
+                                                                    <rect key="frame" x="56" y="15" width="150" height="20"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="150" id="5ZH-32-20R"/>
                                                                         <constraint firstAttribute="height" constant="21" id="bHe-wy-x8z"/>
@@ -286,7 +286,7 @@
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="30 minutes ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="rzg-Ew-rRs">
-                                                                    <rect key="frame" x="212" y="17" width="312" height="17"/>
+                                                                    <rect key="frame" x="212" y="18" width="312" height="14"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="Y4S-0t-Oip"/>
                                                                     </constraints>
