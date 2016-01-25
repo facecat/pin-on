@@ -46,6 +46,10 @@ class LoginVC: UIViewController {
                         self.showErrorAlart("Facebook login failed", msg: "Please check your Facebook count")
                     }
                     
+                    //WARNING: authData.provider! is a bad practice, need to be fixed .
+                    let user = ["test": "ahaha", KEY_PROVIDER: authData.provider!]
+                    DataService.sharedDataSvc.creatFirebaseUser(authData.uid, user: user)
+                    
                     NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
                     self.performSegueWithIdentifier(SEGUE_LOGIN, sender: nil)
                 })
@@ -64,8 +68,15 @@ class LoginVC: UIViewController {
                 if err.code == F_ERROR_USER_NOT_EXIST {
                    print("User not exist.Creat new user automaticly")
                     
-                    DataService.sharedDataSvc.REF_BASE.createUser(email, password: psw, withValueCompletionBlock: { err, authData -> Void in
-                        NSUserDefaults.standardUserDefaults().setValue(authData["uid"], forKey: KEY_UID)
+                    DataService.sharedDataSvc.REF_BASE.createUser(email, password: psw, withValueCompletionBlock: { error, result in
+                        
+                        NSUserDefaults.standardUserDefaults().setValue(result["uid"], forKey: KEY_UID)
+                        DataService.sharedDataSvc.REF_BASE.authUser(email, password: psw, withCompletionBlock: { err, authData in
+                            
+                            //WARNING: authData.provider! is a bad practice, need to be fixed .
+                            let user = ["emailtest": "test string", KEY_PROVIDER: authData.provider!]
+                            DataService.sharedDataSvc.creatFirebaseUser(authData.uid, user: user)
+                        })
                         self.performSegueWithIdentifier(SEGUE_LOGIN, sender: nil)
                     })
                 }

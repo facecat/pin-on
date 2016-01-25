@@ -21,3 +21,4 @@ let F_ERROR_INVALID_PASSWORD = -6
 
 //Key
 let KEY_UID = "uid"
+let KEY_PROVIDER = "provider"
